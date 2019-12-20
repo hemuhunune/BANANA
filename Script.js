@@ -16,144 +16,144 @@ window.onload = function () {
 	//SoundLoad();
 		//歩く音
 		var runSound = new Array();
-		runSound[0] = "walk1.mp3";
+		runSound[0] = "se/walk1.mp3";
 		game.preload([runSound[0]]);
-		runSound[1] = "walk2.mp3";
+		runSound[1] = "se/walk2.mp3";
 		game.preload([runSound[1]]);
 	
 		//ジャンプ音
-		var jumpSound = "jump.mp3";
+		var jumpSound = "se/jump.mp3";
 		game.preload([jumpSound]);
 	
 		//BANANA獲得音
-		var BANANAgetSound = "BANANAget.mp3";
+		var BANANAgetSound = "se/BANANAget.mp3";
 		game.preload([BANANAgetSound]);
 	
 		//BANANA落ちた
-		var BANANAfallSound = "BANANAfall.mp3";
+		var BANANAfallSound = "se/BANANAfall.mp3";
 		game.preload([BANANAfallSound]);
 		
 		//氷るSE
-		var IceStartSound = "ice_se1.wav";
+		var IceStartSound = "se/ice_se1.wav";
 		game.preload([IceStartSound]);
 	
 		//溶けるSE
-		var IceEndSound = "ice_se2.mp3";
+		var IceEndSound = "se/ice_se2.mp3";
 		game.preload([IceEndSound]);
 	
-		var ShineSound = "shine.mp3";
+		var ShineSound = "se/shine.mp3";
 		game.preload([ShineSound]);
 	
-		var HyunSound = "hyun.mp3";
+		var HyunSound = "se/hyun.mp3";
 		game.preload([HyunSound]);
 	
-		var PyokoSound = "pyoko.mp3";
+		var PyokoSound = "se/pyoko.mp3";
 		game.preload([PyokoSound]);
 	
 		//bgmトリガー画像
-		var bgmtrigger = "BGMtrigger.png";
+		var bgmtrigger = "picture/BGMtrigger.png";
 		game.preload([bgmtrigger]);
 	
 		//タイトルBGM
-		var titleBGM = "title.mp3";
+		var titleBGM = "music/title.mp3";
 		game.preload([titleBGM]);
 	
 		//メインBGM
-		var playBGM = "play3.mp3";
+		var playBGM = "music/play3.mp3";
 		game.preload([playBGM]);
 
 	//音関係読み込み終わり
 	//画像関係読み込み初め
 
 	//フラグ画像
-	var flagImg = "flag.png";
+	var flagImg = "picture/flag.png";
 	game.preload([flagImg]);
 
 	//タイトル
-	var titleImg = "BANANAtitle.png";
+	var titleImg = "picture/BANANAtitle.png";
 	game.preload([titleImg]);
 
 	//READY
-	var READYImg = "READY.png";
+	var READYImg = "picture/READY.png";
 	game.preload([READYImg]);
 
 	//START
-	var STARTImg = "START.png";
+	var STARTImg = "picture/START.png";
 	game.preload([STARTImg]);
 
 	//10ポイント文字
-	var tenPointImg = "ten_point.png";
+	var tenPointImg = "picture/ten_point.png";
 	game.preload([tenPointImg]);
 
 	//枠
-	var wakuImg = "waku.png";
+	var wakuImg = "picture/waku.png";
 	game.preload([wakuImg]);
 
 	//床
-	var yukaImg = "yuka.png";
+	var yukaImg = "picture/yuka.png";
 	game.preload([yukaImg]);
 
 	//背景1
-	var backgroundImg = "back1.png";
+	var backgroundImg = "picture/back1.png";
 	game.preload([backgroundImg]);
 
 	//背景2
-	var backgroundImg2 = "back2.png";
+	var backgroundImg2 = "picture/back2.png";
 	game.preload([backgroundImg2]);
 
 	//ゴリ
 	var goriImg = new Array();
-	goriImg[0] = "goriIdle1.png";
+	goriImg[0] = "picture/goriIdle1.png";
 	game.preload([goriImg[0]]);
-	goriImg[1] = "goriIdle2.png";
+	goriImg[1] = "picture/goriIdle2.png";
 	game.preload([goriImg[1]]);
 
 	//BANANA
-	var BANANAImg = "BANANA.png";
+	var BANANAImg = "picture/BANANA.png";
 	game.preload([BANANAImg]);
 
 	//ORANGE
-	var ORANGEImg = "orange.png";
+	var ORANGEImg = "picture/orange.png";
 	game.preload([ORANGEImg]);
 
 	//氷
-	var IceImg = "ice.png";
+	var IceImg = "picture/ice.png";
 	game.preload([IceImg]);
 
 	//みたらしさん
-	var MitarashiImg = "mitarashi.png";
+	var MitarashiImg = "picture/mitarashi.png";
 	game.preload([MitarashiImg]);
 
 	//ゴリ飛べ
-	var goriJumpImg = "gorijump.png";
+	var goriJumpImg = "picture/gorijump.png";
 	game.preload([goriJumpImg]);
 
 	//左ボタン
-	var leftbuttonImg = "leftbutton.png";
+	var leftbuttonImg = "picture/leftbutton.png";
 	game.preload([leftbuttonImg]);
 
 	//右ボタン
-	var rightbuttonImg = "rightbutton.png";
+	var rightbuttonImg = "picture/rightbutton.png";
 	game.preload([rightbuttonImg]);
 
 	//ジャンプボタン
-	var jumpbuttonImg = "jumpbutton.png";
+	var jumpbuttonImg = "picture/jumpbutton.png";
 	game.preload([jumpbuttonImg]);
 
 	//リトライボタン
-	var B_Retry = "Retry.png";					//game.htmlからの相対パス
+	var B_Retry = "picture/Retry.png";					//game.htmlからの相対パス
 	game.preload([B_Retry]);					//データを読み込んでおく
 
 	//ツイートボタン
-	var B_Tweet = "Tweet.png";					//game.htmlからの相対パス
+	var B_Tweet = "picture/Tweet.png";					//game.htmlからの相対パス
 	game.preload([B_Tweet]);					//データを読み込んでおく
 	
 	//ノーマルボタン
-	var normalButtonImg = "normal_mode.png";
+	var normalButtonImg = "picture/normal_mode.png";
 	game.preload([normalButtonImg]);
 
 	//90秒チャレンジボタン
-	var sixtyButtonImg = "sixty_mode.png";
+	var sixtyButtonImg = "picture/sixty_mode.png";
 	game.preload([sixtyButtonImg]);
 
 	//読み込み終わり
